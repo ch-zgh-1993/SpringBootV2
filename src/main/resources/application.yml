@@ -1,0 +1,12 @@
+# Server settings (ServerProperties)
+server:
+  port: ${port:8222}
+  sessionTimeout: 30
+  contextPath: /
+
+logging:
+  path: /tmp
+  file: my.log
+
+multipart:
+  maxFileSize: 10Mb
