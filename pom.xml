@@ -2,7 +2,7 @@
 * @Author: Zhang Guohua
 * @Date:   2018-11-21 13:12:27
 * @Last Modified by:   zgh
-* @Last Modified time: 2018-11-21 16:02:16
+* @Last Modified time: 2018-11-21 17:52:56
 * @Description: create by zgh
 * @GitHub: Savour Humor
 */
@@ -68,12 +68,28 @@
 	</dependencies>
 
 	<build>
+
+		<!-- 默认 maven 插件 -->
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+
+		<!-- 指定打包忽略文件 -->
+		<resources>
+			<resource>
+				<!-- 指定文件夹 -->
+				<directory>vue</directory>
+				<!-- 忽略 -->
+				<excludes>
+                    <exclude>
+						*
+					</exclude>
+                </excludes>
+			</resource>
+		</resources>
 	</build>
 
 
