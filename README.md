@@ -1,4 +1,24 @@
+/*
+* @Author: Zhang Guohua
+* @Date:   2018-11-21 13:12:27
+* @Last Modified by:   zgh
+* @Last Modified time: 2018-12-03 10:06:18
+* @Description: create by zgh
+* @GitHub: Savour Humor
+*/
 # SpringBootV2
 SpringBoot 2.0.3 练习内容，规范SpringBoot 练习和目标，不像第一版那么乱。
 
-## 构建war包
+## 导航
+1. 通配符导航
+
+## 接口方法
+1. 请求接口
+
+## 打包
+1. 构建 war
+2. 构建 jar
+
+## 配置文件
+1. pom.xml
+2. application.properties
