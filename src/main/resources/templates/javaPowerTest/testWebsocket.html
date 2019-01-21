@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>test</title>
+</head>
+<input type="button" value="开启ws">
+<input type="button" value="关闭">
+
+<script>
+  const inputs = document.querySelectorAll('input');
+  var wsk;
+  
+  inputs[0].addEventListener('click', function(){
+    wsk = new WebSocket('ws://10.10.12.116:8887');
+    wsk.onopen = function(){
+      wsk.send('hello');
+    };
+    wsk.onclose = function(msg) {
+      console.info('msg');
+    }
+  });
+  inputs[1].addEventListener('click', function(){
+    if(wsk){
+      wsk.close("嗨，关了");
+    }
+  });
+</script>
+</html>

@@ -12,15 +12,18 @@ SpringBoot 2.0.3 练习内容，规范SpringBoot 练习和目标，不像第一�
 ## 导航
 1. 通配符导航
 
-## 全局功能配置
-1. 全局请求统一配置： 增加 access-control-allow-origin。
-
 ## 接口方法
 1. 统一请求接口类
 
 ## 打包
 1. 构建 war
 2. 构建 jar
+
+## 后端功能模块理解
+1. websocket 关闭问题。
+
+## 全局功能配置
+1. 全局请求统一配置： 增加 access-control-allow-origin。
 
 ## 配置文件
 1. pom.xml
